@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Demo checkout with intentional barriers</title>
+<style>body{font:16px/1.6 system-ui;background:#fff;color:#222;max-width:42rem;margin:auto;padding:24px}.delivery{color:#777777;font-size:16px;font-weight:400}input,button{font:inherit;padding:12px;margin:8px}button{min-width:60px}</style></head>
+<body><main><h1>Checkout</h1><p>Training sample with intentional accessibility issues. No purchase or payment will occur.</p>
+<h2>Your order</h2><p>Container gardening kit — $25.00</p><p class="delivery">Delivery takes 3–5 business days.</p>
+<form><h2>Contact details</h2><input type="email" name="email" required><p role="checkbox">Use my billing address for delivery</p>
+<button type="submit"><span aria-hidden="true">→</span></button></form><p id="result"></p></main>
+<script>document.querySelector('form').addEventListener('submit',event=>{event.preventDefault();document.querySelector('#result').textContent='Demo order complete. Nothing was purchased.';});</script>
+</body></html>

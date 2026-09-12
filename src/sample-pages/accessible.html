@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Community workshop registration</title>
+<style>body{font:1.1rem/1.6 system-ui;max-width:45rem;margin:auto;padding:1.5rem;color:#202020;background:#fff}input,button{font:inherit;padding:.6rem}label{display:block}a{color:#0645ad}:focus-visible{outline:3px solid #673ab7;outline-offset:4px}</style></head>
+<body><a href="#main">Skip to main content</a><header><p>Community learning</p></header>
+<main id="main"><h1>Register for a workshop</h1><p>Join our free introduction to container gardening.</p>
+<img width="100" height="80" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='80'%3E%3Crect width='100' height='80' fill='green'/%3E%3C/svg%3E">
+<h2>Your details</h2><form><label for="email">Email address (required)</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="hint"><p id="hint">We will send your workshop confirmation here.</p><button type="submit">Register for the workshop</button></form>
+<p role="status" id="confirmation"></p><h2>Questions</h2><a href="mailto:workshops@example.com">Email the workshop team</a></main>
+<footer><p>Community learning centre</p></footer>
+<script>document.querySelector('form').addEventListener('submit',event=>{event.preventDefault();document.querySelector('#confirmation').textContent='Your demonstration registration is complete.';});</script></body></html>

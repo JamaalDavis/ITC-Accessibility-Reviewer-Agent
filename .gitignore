@@ -1,0 +1,10 @@
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+pytest-cache-files-*/
+*.egg-info/
+.env
+reports/
+.npm-cache/
+src/data/wcag22-source.html

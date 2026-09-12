@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "accessibility-agent"
+version = "1.0.0"
+description = "Deterministic accessibility release governance exercise"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+accessibility-agent = "accessibility_agent.comparison:main"
+
+[tool.setuptools.packages.find]
+include = ["accessibility_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

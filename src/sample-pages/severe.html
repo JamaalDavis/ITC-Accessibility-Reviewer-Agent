@@ -1,0 +1,9 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Intentionally severe barriers</title>
+<style>body{font:18px system-ui;color:#bbb;background:white}input{border:1px solid #ccc}*:focus{outline:none}.fake-button{padding:10px;background:#eee;width:100px;cursor:pointer}</style></head>
+<body><div>Workshop registration</div><main><main><p>Complete the form to reserve a place.</p></main>
+<div class="fake-button" onclick="document.querySelector('#error').hidden=false">Register</div>
+<input id="trapped" placeholder=""><button></button><a href="#error"><span aria-hidden="true">→</span></a>
+<div role="slider"></div><div id="error" hidden style="color:#f99">Invalid</div></main>
+<script>document.querySelector('#trapped').addEventListener('keydown',event=>{if(event.key==='Tab')event.preventDefault();});</script>
+</body></html>
