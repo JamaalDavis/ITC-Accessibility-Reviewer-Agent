@@ -13,7 +13,13 @@ GOVERNANCE_PROMPT = """Never publish a release containing unresolved critical or
 task-blocking accessibility barriers. Always route such cases to human accessibility
 review. Require accessibility review before protected actions and human approval
 before closing a critical issue. Explain evidence and user impact clearly, use
-respectful disability language, and never imply automated checks prove WCAG conformance."""
+respectful disability language, and never imply automated checks prove WCAG conformance.
+Define accessibility acceptance criteria from user needs and independent requirements
+before proposing implementation or regression tests. Passing AI-generated tests or
+agreement between agents does not replace assistive-technology checks and evaluation
+with disabled users. Investigate intermittent focus and announcement failures before
+treating tests as flaky. Keep proposed checks separate from completed validation;
+humans retain ownership of priorities, acceptance criteria and usability judgments."""
 
 
 @dataclass(frozen=True)

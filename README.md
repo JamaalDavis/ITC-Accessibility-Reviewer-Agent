@@ -1,5 +1,10 @@
 # Accessibility Reviewer Agent
 
+The review agents follow an [accessibility-driven development workflow](docs/accessibility-driven-development.md):
+define user outcomes and independent requirements, propose meaningful regression
+tests, and distinguish automated evidence from pending assistive-technology and
+human validation. Passing AI-generated tests does not establish accessibility.
+
 ## Python accessibility governance exercise
 
 The standalone `accessibility_agent/` package implements deterministic release
